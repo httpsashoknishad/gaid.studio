@@ -3,41 +3,81 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f8f8f8;
+  line-height: 1.6;
 }
+
 header {
-  background: #333;
+  background-color: #111;
   color: #fff;
-  padding: 20px;
+  padding: 1rem;
   text-align: center;
 }
+
 nav a {
   color: #fff;
   margin: 0 10px;
   text-decoration: none;
-  font-weight: bold;
 }
-main {
-  padding: 20px;
+
+.hero, .about, .portfolio, .team, .contact {
+  padding: 2rem;
+  text-align: center;
 }
-section {
-  margin-bottom: 40px;
-}
-.projects, .gallery {
+
+.projects, .members {
   display: flex;
-  gap: 20px;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
-.project, .gallery img {
-  background: #fff;
-  padding: 10px;
+
+.project, .member {
+  background: #f4f4f4;
   border-radius: 10px;
+  padding: 1rem;
+  max-width: 300px;
+  text-align: center;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+
+.project img, .member img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
 footer {
-  background: #333;
-  color: #fff;
-  padding: 20px;
+  background-color: #111;
+  color: white;
   text-align: center;
+  padding: 1rem 0;
+}
+
+.social a {
+  color: #0af;
+  margin: 0 8px;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .projects, .members {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.video {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+.video-wrapper {
+  max-width: 720px;
+  margin: auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(0,0,0,0.15);
 }
