@@ -1,32 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Portfolio - GAID Studio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio | GAID Studio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Our Work</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="team.html">Team</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-    <main>
-        <p>Here are some samples of our recent work. (You can replace these with actual media.)</p>
-        <ul>
-            <li>Video Editing Sample 1</li>
-            <li>GFX Poster Example</li>
-            <li>Animation Snippet</li>
-            <li>Motion Graphics Documentary Clip</li>
-        </ul>
-    </main>
-    <footer>
-        <p>© 2025 GAID Studio</p>
-    </footer>
+  <header data-aos="fade-down">
+    <h1>GAID Studio</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="team.html">Team</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    
+<section class="portfolio" data-aos="fade-up">
+  <h2>Our Work</h2>
+  <div class="projects">
+    <div class="project" data-aos="zoom-in">
+      <img src="https://via.placeholder.com/300x180.png?text=Video+Editing" alt="Video Editing"/>
+      <h3>Video Editing</h3>
+    </div>
+    <div class="project" data-aos="zoom-in">
+      <img src="https://via.placeholder.com/300x180.png?text=Poster+Design" alt="Poster Design"/>
+      <h3>Poster Design</h3>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer data-aos="fade-up">
+    <p>&copy; 2025 GAID Studio | Follow us:</p>
+    <div class="social">
+      <a href="#" target="_blank">Instagram</a> |
+      <a href="#" target="_blank">YouTube</a> |
+      <a href="#" target="_blank">Behance</a>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 1000 });</script>
 </body>
 </html>
