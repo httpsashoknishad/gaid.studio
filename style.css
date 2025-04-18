@@ -41,14 +41,3 @@ footer {
   padding: 20px;
   text-align: center;
 }
-footer .social a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: bold;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-footer .social a:hover {
-  color: #ffcc00;
-  transform: scale(1.1);
-}
