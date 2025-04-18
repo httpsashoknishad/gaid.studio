@@ -68,16 +68,3 @@ footer {
 html {
   scroll-behavior: smooth;
 }
-
-.video {
-  padding: 50px 20px;
-  background-color: #f4f4f4;
-  text-align: center;
-}
-.video-wrapper {
-  max-width: 720px;
-  margin: auto;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 0 12px rgba(0,0,0,0.15);
-}
