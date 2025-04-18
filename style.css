@@ -3,104 +3,52 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
+  background: #f8f8f8;
 }
-
 header {
-  background-color: #111;
+  background: #333;
   color: #fff;
-  padding: 1rem;
+  padding: 20px;
   text-align: center;
 }
-
 nav a {
   color: #fff;
   margin: 0 10px;
   text-decoration: none;
+  font-weight: bold;
 }
-
-.hero, .about, .portfolio, .team, .contact {
-  padding: 2rem;
-  text-align: center;
+main {
+  padding: 20px;
 }
-
-.projects, .members {
+section {
+  margin-bottom: 40px;
+}
+.projects, .gallery {
   display: flex;
-  flex-wrap: wrap;
+  gap: 20px;
   justify-content: center;
-  gap: 1rem;
+  flex-wrap: wrap;
 }
-
-.project, .member {
-  background: #f4f4f4;
+.project, .gallery img {
+  background: #fff;
+  padding: 10px;
   border-radius: 10px;
-  padding: 1rem;
-  max-width: 300px;
-  text-align: center;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-
-.project img, .member img {
-  max-width: 100%;
-  border-radius: 8px;
-}
-
 footer {
-  background-color: #111;
-  color: white;
+  background: #333;
+  color: #fff;
+  padding: 20px;
   text-align: center;
-  padding: 1rem 0;
 }
-
-.social a {
-  color: #0af;
-  margin: 0 8px;
+footer .social a {
+  color: #fff;
   text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
-
-@media (max-width: 600px) {
-  .projects, .members {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-.video {
-  padding: 50px 20px;
-  background-color: #f4f4f4;
-  text-align: center;
-}
-.video-wrapper {
-  max-width: 720px;
-  margin: auto;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 0 12px rgba(0,0,0,0.15);
-}
-
-.gallery {
-  padding: 50px 20px;
-  text-align: center;
-  background-color: #fff;
-}
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  max-width: 1000px;
-  margin: auto;
-}
-.gallery-grid img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-.gallery-grid img:hover {
-  transform: scale(1.03);
+footer .social a:hover {
+  color: #ffcc00;
+  transform: scale(1.1);
 }
